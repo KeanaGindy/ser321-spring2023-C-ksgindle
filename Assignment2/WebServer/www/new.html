@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <script type="text/javascript">
+    function getNewImage() {
+      fetch('/json2')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+          document.getElementById("heading").innerHTML = data.header
+          document.getElementById("image").src = data.image
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
+    }
+      getNewImage();
+  </script>
+</head>
+  <body>
+   <h1 id="heading"></h1>
+  <img src="" id="image" style ="max-width:500px;max-height:500px" /> <br />
+</body>
+
+</html>
