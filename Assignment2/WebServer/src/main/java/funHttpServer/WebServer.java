@@ -87,6 +87,7 @@ class WebServer {
       put("guppy", "https://www.thesprucepets.com/thmb/QsK0cYtPWxywxG2jn02tyRlyWZg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/guppy-fish-species-profile-5078901-hero-9095fa292246421b820d32d4731c991b.jpg");
       put("goldfish", "https://i.natgeofe.com/n/18708334-6fce-40b5-ade6-a7e2db7035f2/01-goldfish-nationalgeographic_1567132_4x3.jpg");
       put("angelfish", "https://cdn.shopify.com/s/files/1/0311/3149/articles/care-guide-for-freshwater-angelfish-the-feisty-angel-of-the-aquarium-770309.jpg?v=1659758851");
+      put("goldfish", "https://i.natgeofe.com/n/18708334-6fce-40b5-ade6-a7e2db7035f2/01-goldfish-nationalgeographic_1567132_4x3.jpg");
     }
    };
 
@@ -376,7 +377,7 @@ class WebServer {
              }else if(food > 5){
                 builder.append("You fed: " + fishes + " fishes! You gave them " + food + " ounces of food.  Here is the type of fish you fed!");
              }
-             if (fishes != 0 && fishes < 5){
+             if (fishes != 0 && fishes <= 5){
                 for(int i = 0; i < fishes && i < 5;i++) {
                    builder.append(new String(readFileInBytes(file)));
                 }
