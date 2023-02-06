@@ -34,8 +34,8 @@
 - [ ] xxi.
 
 ## How to run (Can run w/o args):
-- gradle runServer -Pport=9099
-- gradle TCPClient -Pport=9099 -Phost='localhost' 
+- gradle runServerTCP -Pport=9099 OR runServerTCP
+- gradle runClientTCP -Pport=9099 -Phost='localhost' OR runClientTCP
 
 
 ## UML Diagram:
