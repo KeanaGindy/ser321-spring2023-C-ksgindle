@@ -58,10 +58,10 @@ Request:
 Request:
 - {"selected": <String>} (String can be 'guessLetter' or 'guessWord')
  
- Response for letter guess: (data is user's guess) (letter is also user's guess)
+Response for letter guess: (data is user's guess) (letter is also user's guess)
 - {"datatype": int, "type": <String>, "data": <String>, "letter": <String>, "points": int}
  
-  Response for word guess: (data is user's guess) (letter is also user's guess)
+Response for word guess: (data is user's guess) (letter is also user's guess)
 - {"datatype": int, "type": <String>, "data": <String>, "word": <String>, "points": int}
  
  Error Response:
