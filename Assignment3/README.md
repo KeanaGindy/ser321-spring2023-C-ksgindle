@@ -10,28 +10,27 @@ Description & Purpose:
   custom host and port arguments or the default port and host of 8000 and 'localhost' will be chosen.
 
 Requirements Checklist:
-
-  i. [x]
-  ii.
-  iii.
-  iv.
-  v.
-  vi.
-  vii.
-  viii.
-  ix.
-  x.
-  xi.
-  xii.
-  xiii.
-  xiv.
-  xv.
-  xvi.
-  xvii.
-  xviii.
-  xix.
-  xx.
-  xxi.
+- [x] i.
+- [ ] ii.
+- [ ] iii.
+- [ ] iv.
+- [ ] v.
+- [ ] vi.
+- [ ] vii.
+- [ ] viii.
+- [ ] ix.
+- [ ] x
+- [ ] xi.
+- [ ] xii.
+- [ ] xiii.
+- [ ] xiv.
+- [ ] xv.
+- [ ] xvi.
+- [ ] xvii.
+- [ ] xviii.
+- [ ] xix.
+- [ ] xx.
+- [ ] xxi.
 
 How to run:
 
