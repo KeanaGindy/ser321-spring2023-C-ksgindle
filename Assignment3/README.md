@@ -1,4 +1,4 @@
-Description & Purpose:
+##Description & Purpose:
 
   Picture guessing game similar to hangamn that utilization a server/client model that adheres to the TCP protocl. Upon entering, the user inputs their name
   and is given three options:
@@ -9,7 +9,7 @@ Description & Purpose:
   execute the server with a designated port value. If no port is chosen, a default port of 8000 will be used. Simiarly, the user can execute the client with
   custom host and port arguments or the default port and host of 8000 and 'localhost' will be chosen.
 
-Requirements Checklist:
+##Requirements Checklist:
 - [x] i.
 - [x] ii.
 - [x] iii.
@@ -32,18 +32,18 @@ Requirements Checklist:
 - [x] xx.
 - [ ] xxi.
 
-How to run:
+##How to run:
   
 
 
-UML Diagram:
+##UML Diagram:
   Uploaded in github repo, showcases sequence diagram for when the user is given menu options.
 
-Protocol Description:
+##Protocol Description:
 
 
-Video Demonstration:
+##Video Demonstration:
 
 
 
-How the program is robust:
+##How the program is robust:
