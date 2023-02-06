@@ -11,32 +11,33 @@ Description & Purpose:
 
 Requirements Checklist:
 - [x] i.
-- [ ] ii.
-- [ ] iii.
+- [x] ii.
+- [x] iii.
 - [ ] iv.
 - [ ] v.
-- [ ] vi.
-- [ ] vii.
-- [ ] viii.
-- [ ] ix.
-- [ ] x
-- [ ] xi.
-- [ ] xii.
-- [ ] xiii.
-- [ ] xiv.
-- [ ] xv.
+- [x] vi.
+- [x] vii.
+- [x] viii.
+- [x] ix.
+- [x] x
+- [x] xi.
+- [x] xii.
+- [x] xiii.
+- [x] xiv.
+- [x] xv.
 - [ ] xvi.
 - [ ] xvii.
 - [ ] xviii.
 - [ ] xix.
-- [ ] xx.
+- [x] xx.
 - [ ] xxi.
 
 How to run:
+  
 
 
 UML Diagram:
-
+  Uploaded in github repo, showcases sequence diagram for when the user is given menu options.
 
 Protocol Description:
 
