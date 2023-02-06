@@ -27,8 +27,8 @@
 - [x] xiv.
 - [x] xv.
 - [ ] xvi.
-- [ ] xvii.
-- [ ] xviii.
+- [x] xvii.
+- [x] xviii.
 - [ ] xix.
 - [x] xx.
 - [ ] xxi.
@@ -72,3 +72,12 @@ Response for word guess: (data is user's guess) (letter is also user's guess)
 
 
 ## How the program is robust:
+  
+  The program is made robust from the client/server execution. If no arguments are inputted, default arguments are used.
+  During execution, if a user inputs the incorrect input, the server will response accordingly with error protocl or the
+  client will respond. The protocol uses headers accordingly. FOr instance, the header for errorr is simply 'error' to 
+  aid readibility. 
+  
+  
+  
+  
