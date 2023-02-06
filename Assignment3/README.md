@@ -14,7 +14,7 @@
 - [x] i.
 - [x] ii.
 - [x] iii.
-- [ ] iv.
+- [x] iv.
 - [ ] v.
 - [x] vi.
 - [x] vii.
@@ -26,10 +26,10 @@
 - [x] xiii.
 - [x] xiv.
 - [x] xv.
-- [ ] xvi.
+- [x] xvi.
 - [x] xvii.
 - [x] xviii.
-- [ ] xix.
+- [x] xix.
 - [x] xx.
 - [ ] xxi.
 
