@@ -76,7 +76,7 @@ Response for word guess: (data is user's guess) (letter is also user's guess)
   The program is made robust from the client/server execution. If no arguments are inputted, default arguments are used.
   During execution, if a user inputs the incorrect input, the server will response accordingly with error protocl or the
   client will respond. The protocol uses headers accordingly. FOr instance, the header for errorr is simply 'error' to 
-  aid readibility. 
+  aid readibility. Lastly, try/catch blocks with correct error handling are implemented in the best-suited areas of code.
   
   
   
