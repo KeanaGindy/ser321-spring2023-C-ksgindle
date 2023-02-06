@@ -42,7 +42,30 @@
   Uploaded in github repo, showcases sequence diagram for when the user is given menu options.
 
 ## Protocol Description:
-
+### Client asks server.
+Request:
+ {"selected": <String>} (String can be 'l', 'ci', or 'co')
+ 
+ Response (if image):
+ {"type": <String>, "datatype": int, "name": <String>, "data": byte[]}
+ 
+ Response (if string):
+ {"datatype": int, "type": <String>, "data": <String>}
+ 
+ Error Response:
+ {"error", err}
+### Client guessing.
+Request:
+ {"selected": <String>} (String can be 'guessLetter' or 'guessWord')
+ 
+ Response for letter guess: (data is user's guess) (letter is also user's guess)
+ {"datatype": int, "type": <String>, "data": <String>, "letter": <String>, "points": int}
+ 
+  Response for word guess: (data is user's guess) (letter is also user's guess)
+ {"datatype": int, "type": <String>, "data": <String>, "word": <String>, "points": int}
+ 
+ Error Response:
+ {"error", err}
 
 ## Video Demonstration:
 
