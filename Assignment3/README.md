@@ -34,8 +34,10 @@
 - [ ] xxi.
 
 ## How to run (Can run w/o args):
-- gradle runServerTCP -Pport=9099 OR runServerTCP
-- gradle runClientTCP -Pport=9099 -Phost='localhost' OR runClientTCP
+- gradle runServerTCP -Pport=8000 OR runServerTCP
+- gradle runClientTCP -Pport=8000 -Phost='localhost' OR runClientTCP
+- gradle runServerUDP -Pport=8000 OR runServerUDP
+- gradle runClientUDP -Pport=8000 -Phost='localhost' OR runClientUDP
 
 
 ## UML Diagram:
