@@ -33,8 +33,9 @@
 - [x] xx.
 - [ ] xxi.
 
-## How to run:
-  
+## How to run (Can run w/o args):
+- gradle runServer -Pport=9099
+- gradle TCPClient -Pport=9099 -Phost='localhost' 
 
 
 ## UML Diagram:
