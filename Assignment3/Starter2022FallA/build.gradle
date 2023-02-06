@@ -1,0 +1,65 @@
+
+apply plugin: 'application'
+
+mainClassName = 'ClientGUI'
+
+ def host = 'localhost'
+ def port = 8000
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.json', name: 'json', version: '20200518'
+}
+
+//gradle runServerTCP -Pport=9099
+task runServerTCP(type: JavaExec) {
+  group 'tcp'
+  description 'Displays the server for a game of concentration'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Solution.tcp.Server'
+  standardInput = System.in
+  args port
+}
+
+//gradle runClientTCP -Pport=9099 -Phost='localhost' 
+task runClientTCP(type: JavaExec) {
+  group 'gui'
+  description 'Displays a GUI for a game of concentration'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Solution.tcp.ClientGui'
+  standardInput = System.in 
+  args port
+  args host
+}
+
+//gradle runServerUDP -Pport=9099
+task runServerUDP(type: JavaExec) {
+  group 'udp'
+  description 'Displays a server for a game of concentration'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Solution.udp.Server'
+  standardInput = System.in
+  args port
+}
+
+//gradle runClientUDP -Pport=9099 -Phost='localhost' 
+task runClientUDP(type: JavaExec) {
+  group 'udp'
+  description 'Displays a GUI for a game of concentration'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Solution.udp.ClientGui'
+  standardInput = System.in
+  args port
+  args host
+}
