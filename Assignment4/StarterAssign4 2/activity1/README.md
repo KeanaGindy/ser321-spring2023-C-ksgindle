@@ -1,12 +1,14 @@
 # Assignment 4 Activity 1
 ## Description
 The Performer has 6 functions, 
-    - add: adding strings to an array, 
-    - clear: clearing the entire array,
-    - find: finding a string at a specified index,
-    - display: displaying the entire list,
-    - sort: sorting the list alphabetically,
-    - prepend: adding a string to the beginning of a string at the specified index
+```
+add: adding strings to an array, 
+clear: clearing the entire array,
+find: finding a string at a specified index,
+display: displaying the entire list,
+sort: sorting the list alphabetically,
+prepend: adding a string to the beginning of a string at the specified index
+```
 Additionally, the user can quit. 
 When running the server, it can be decided whether the server is single threaded, multithreaded and unbounded, or multithreaded and bounded. The bounded server defaults to bound two threads.
 
