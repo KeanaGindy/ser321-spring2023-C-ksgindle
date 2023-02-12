@@ -1,4 +1,4 @@
-# Assignment 4 Activity 1
+# Assignment 4 Activity 2
 ## Description
 Demonstrates simple multithreaded Client and Server communication using SocketServer and Socket Classes. The client will be playing a memory matching game.
 In this game, the user has 3 options: See leaderboard, Play game, and quit. <br />
