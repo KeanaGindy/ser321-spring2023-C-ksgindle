@@ -1,43 +1,56 @@
-#### Purpose:
-Demonstrate simple Client and Server communication using `SocketServer` and `Socket`classes.
+# Assignment 4 Activity 1
+## Description
+Demonstrates simple multithreaded Client and Server communication through a memory matching game.<br />
+The protocol for the communication uses protobuf. <br />
+Th
 
-Here a simple protocol is defined which uses protobuf. The client reads in a json file and then creates a protobuf object from it to send it to the server. The server reads it and sends back the calculated result. 
+## Protocol
 
-The response is also a protobuf but only with a result string. 
+### Requests
+request: { "selected": <int: 1=add, 2=clear, 3=find, 4=display, 5=sort, 6=prepend
+0=quit>, "data": <thing to send>}
 
-To see the proto file see: src/main/proto which is the default location for proto files. 
+  add: data <string> -- a string to add to the list, this should already mostly work
+  clear: data <> -- no data given, clears the whole list
+  find: data <string> -- display index of string if found, else -1
+  display: data <> -- no data given, displays the whole list
+  sort: data <> -- no data given, sorts the list
+  prepend: data <int> <string> -- index and string, prepends given string to string at index
 
-Gradle is already setup to compile the proto files. 
+### Responses
 
-### The procotol
-See the PROTOCOL.md for details.
-
-
-### How to run it (optional)
-The proto file can be compiled using
-
-``gradle generateProto``
-
-This will also be done when building the project. 
-
-You should see the compiled proto file in Java under build/generated/source/proto/main/java/buffers
-
-Now you can run the client and server 
-
-#### Default 
-Server is Java
-Per default on 9099
-runServer
-
-You have one example client in Java using the Protobuf protocol
-
-Clients runs per default on 
-host localhost, port 9099
-Run Java:
-	runClient
+success response: {"ok" : true, type": <String> "data": <thing to return> }
 
 
-#### With parameters:
-Java
-gradle runClient -Pport=9099 -Phost='localhost'
-gradle runServer -Pport=9099
+type <String>: echoes original selected from request
+datatyoe<int>: echoes original inputted number from request
+data <string>: 
+    add: return current list
+    clear: return empty list
+    find: return integer value of index where that string was found or -1
+    display: return current
+    sort: return current list
+    prepend: return current list
+
+
+error response: {"ok" : false, "message"": <error string> }
+error string: Should give good error message of what went wrong
+
+
+## How to run the program
+### Terminal
+Please use the following commands:
+```
+    For Server, run "gradle runServer -Pport=9099 -q --console=plain"
+    For Server (single thread), run "gradle runTask1"
+    For Server (multithreaded, unbounded), run "gradle runTask2"
+    For Server (multithreaded, bounded), run "gradle runTask3"
+```
+```   
+    For Client, run "gradle runClient"
+```   
+## Screencast Link
+https://drive.google.com/file/d/17llloLEsK83eZO5Pf-ynuwBJbutUdFeS/view?usp=share_link
+
+## Requirements Completed
+All requirements were completed.
