@@ -35,4 +35,4 @@ Specific Protocol for requests and responses are listed in the proto folder.
 https://drive.google.com/file/d/1ZFk1IytLiujwG3oY2Z-WChNGYvxkq7T8/view?usp=share_link
 
 ## Requirements Completed
-All requirements were completed.
+All requirements were completed, error handling might be lacking.
