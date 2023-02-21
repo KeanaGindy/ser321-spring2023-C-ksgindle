@@ -4,10 +4,11 @@ creditor or banking system with nodes acting as 'creditors' or 'banks' and the c
 The program responds accordingly depending on the balance of the creditors and the credit a client is requesting.
 
 <h1>HOW TO RUN</h1>
-*gradle runLeader --console=plain-q
-*gradle runNode1 -Pmoney=1000 --console=plain-q
-*gradle runNode2 -Pmoney=2000 --console=plain-q
-*gradle runClient --console=plain-q
+
+    -gradle runLeader --console=plain-q
+    -gradle runNode1 -Pmoney=1000 --console=plain-q
+    -gradle runNode2 -Pmoney=2000 --console=plain-q
+    -gradle runClient --console=plain-q
 
 <h1>SCREENCAST</h1>
 https://drive.google.com/file/d/1krPGESCAjpFXjN9Z2-DM_fph_GvrqRWL/view?usp=share_link
