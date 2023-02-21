@@ -1,5 +1,4 @@
-
-##PROJECT EXPLANATION
+<h1>PROJECT EXPLANATION </h1>
 This demonstrated a simplified conensus algorithm between multiple nodes with the use of a leader node. This is exemplified through the creation of a
 creditor or banking system with nodes acting as 'creditors' or 'banks' and the client acting as the user who wants to request credit or to pay back the credit.
 The program responds accordingly depending on the balance of the creditors and the credit a client is requesting.
