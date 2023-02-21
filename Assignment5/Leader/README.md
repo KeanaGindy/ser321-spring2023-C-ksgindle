@@ -3,26 +3,27 @@ This demonstrated a simplified conensus algorithm between multiple nodes with th
 creditor or banking system with nodes acting as 'creditors' or 'banks' and the client acting as the user who wants to request credit or to pay back the credit.
 The program responds accordingly depending on the balance of the creditors and the credit a client is requesting.
 
-<h2>HOW TO RUN</h2>
+<h1>HOW TO RUN</h1>
 *gradle runLeader --console=plain-q
 *gradle runNode1 -Pmoney=1000 --console=plain-q
 *gradle runNode2 -Pmoney=2000 --console=plain-q
 *gradle runClient --console=plain-q
 
-<h3>SCREENCAST</h3>
+<h1>SCREENCAST</h1>
 https://drive.google.com/file/d/1krPGESCAjpFXjN9Z2-DM_fph_GvrqRWL/view?usp=share_link
 
-<h4>REQUIREMENTS</h4>
+<h1>REQUIREMENTS</h1>
 All requirements fulfilled besides 13 and 14. Additionally, it is not a very robust program. Therefore, the options such as 'credit' and 'pay-back' must be spelled correctly.
 
-##PROTOCOL
+<h1>PROTOCOL</h1>
 
-###Requests
-    -Type: ID
-    -Data: IDresponse
+<h2>Requests</h2>
 
     -Type: clientID
     -Data: response
+    
+    -Type: ID
+    -Data: IDresponse
 
     -Type: Choice
     -Data: response
@@ -34,7 +35,8 @@ All requirements fulfilled besides 13 and 14. Additionally, it is not a very rob
     -Data: credit
     
 
-###Responses
+<h2>Responses</h2>
+
     -Type: yes
     -Data: credit
 
