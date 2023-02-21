@@ -9,6 +9,6 @@ https://drive.google.com/file/d/1potlk1JKBUgRbn1LXUCRL8Aj7kRZox2A/view?usp=share
 
 <h1>HOW TO RUN</h1>
 
-*To run the leader (on default ports): gradle runPeer -PisLeader=true -q --console=plain
-*To run a peer: gradle runPeer -PpeerName=Keana -Ppeer="localhost:9000" -Pleader="localhost:8000" -q --console=plain
-*Running another peer: gradle runPeer -PpeerName=KeanaClone -Ppeer="localhost:1234" -Pleader="localhost:8000" -q --console=plain
+      -To run the leader (on default ports): gradle runPeer -PisLeader=true -q --console=plain
+      -To run a peer: gradle runPeer -PpeerName=Keana -Ppeer="localhost:9000" -Pleader="localhost:8000" -q --console=plain
+      -Running another peer: gradle runPeer -PpeerName=KeanaClone -Ppeer="localhost:1234" -Pleader="localhost:8000" -q --console=plain
