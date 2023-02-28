@@ -18,6 +18,13 @@ Will run a node with a Timer, Rock Paper Scissors, and BlackBook services. The n
 
 ### gradle runClient
 Will run a client which will call the services from the node, it talks to the node directly not through the registry. At the end the client does some calls to the Registry to pull the services, this will be needed later.
+The command to run the client with default values and allowing user interaction is:
+
+- gradle runClient -Pauto=0 --console=plain -q
+
+For the command to run with hardcoded data input, no user interaction:
+
+- gradle runClient -Pauto=1 --console=plain -q
 
 ### gradle runDiscovery
 Will create a couple of threads with each running a node with services in JSON and Protobuf. This is just an example and not needed for assignment 6. 
