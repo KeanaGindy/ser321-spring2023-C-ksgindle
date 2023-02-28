@@ -11,6 +11,10 @@ The program expects inputs such as '1' or 'a' at times. It will prompt the user 
 
 Before starting do a "gradle generateProto".
 
+## Requirements
+
+All the requirements of the program were met for task 1 and task 2. Task 3 was not implemented.
+
 ## ScreenCast
 
 https://drive.google.com/file/d/15DCOolbjdq5RH-VNyPL3O0vFLtecobtT/view?usp=share_link
