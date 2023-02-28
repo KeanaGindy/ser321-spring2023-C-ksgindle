@@ -1,0 +1,51 @@
+// Description: This service allows for the creation of an address book.
+// list allows for the listing of all entries and their respective data.
+// add allows the user to add an entry to the book.
+// find allows the user to look up an entry(via name) from the book.
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "service";
+option java_outer_classname = "BlackBookProto";
+
+import "google/protobuf/empty.proto";
+
+package services;
+
+service BlackBook {
+  rpc list (google.protobuf.Empty) returns (BlackBookResponse) {}
+  rpc add (BlackBookWriteRequest) returns (BlackBookResponse) {}
+  rpc find (BlackBookSearchRequest) returns (BlackBookResponse) {}
+}
+
+// The response message when reading the entries, either by read or search
+message BlackBookResponse {
+  bool isSuccess = 1;
+  Address address = 2;
+  string message = 3;
+  repeated Address book = 4; 
+  string error = 5;
+}
+
+
+// The request message to search for classmates in a city
+message BlackBookSearchRequest {
+    string name = 1; 
+}
+
+
+// The request message adding a new entry to the server
+message BlackBookWriteRequest {
+    Address address = 1;
+}
+
+
+
+message Address {
+    string name = 1; 
+    string city = 2; 
+    string state = 3; 
+    string street = 4;
+    string phone=5;
+}
