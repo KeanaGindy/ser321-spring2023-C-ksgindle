@@ -2,6 +2,11 @@
 
 The following folder contains a Registry.jar which includes a Registering service where Nodes can register to allow clients to find them and use their implemented GRPC services. 
 
+- The first service is a timer. Within the timer, the client can create new timers, check timers, stop timers, and list all the timers.
+- The second service is a rock, paper, and scissors game. This game opeartes with the user of a computer player. The user can play a game and then check a leaderboard.
+- The last service is a blackbook service. This service allows a user to create a new entry into their personal blackbook. An entry contains the name of an entry, the
+address of entry, and the phone number. The user can create new entries, and look at all the entries in their 'blackbook'.
+
 Some more detailed explanations will follow and please also check the build.gradle file
 
 Before starting do a "gradle generateProto".
