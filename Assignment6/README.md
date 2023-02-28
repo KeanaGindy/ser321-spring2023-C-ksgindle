@@ -7,6 +7,8 @@ The following folder contains a Registry.jar which includes a Registering servic
 - The last service is a blackbook service. This service allows a user to create a new entry into their personal blackbook. An entry contains the name of an entry, the
 address of entry, and the phone number. The user can create new entries, and look at all the entries in their 'blackbook'.
 
+The program expects inputs such as '1' or 'a' at times. It will prompt the user according to the input it is expecting.
+
 Before starting do a "gradle generateProto".
 
 ### gradle runRegistryServer
