@@ -12,7 +12,9 @@ Will run the Registry node on localhost (arguments are possible see gradle). Thi
 The Server allows Protobuf, JSON and gRPC. We will only be using gRPC
 
 ### gradle runNode
-Will run a node with an Echo and Joke service. The node registers itself on the Registry. You can change the host and port the node runs on and this will register accordingly with the Registry
+Will run a node with a Timer, Rock Paper Scissors, and BlackBook services. The node registers itself on the Registry. You can change the host and port the node runs on and this will register accordingly with the Registry. However, the command to run the node with default values looks like so:
+
+- gradle runNode --Console=plain -q
 
 ### gradle runClient
 Will run a client which will call the services from the node, it talks to the node directly not through the registry. At the end the client does some calls to the Registry to pull the services, this will be needed later.
