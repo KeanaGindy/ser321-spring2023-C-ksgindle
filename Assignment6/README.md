@@ -11,6 +11,10 @@ The program expects inputs such as '1' or 'a' at times. It will prompt the user 
 
 Before starting do a "gradle generateProto".
 
+## ScreenCast
+
+https://drive.google.com/file/d/15DCOolbjdq5RH-VNyPL3O0vFLtecobtT/view?usp=share_link
+
 ### gradle runRegistryServer
 Will run the Registry node on localhost (arguments are possible see gradle). This node will run and allows nodes to register themselves. 
 
